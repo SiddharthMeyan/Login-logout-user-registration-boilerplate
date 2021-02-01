@@ -45,6 +45,6 @@ def loginPage(request):
     return render(request,"login.html")
 
 
-def logoutuser(request):
+def logoutPage(request):
     logout(request)
-    return redirect('login')
+    return redirect('loginPage')
